@@ -71,6 +71,14 @@ export const settings = {
       role: "Head of Communication",
       location: "Warsaw",
       avatarUrl: "https://i.pravatar.cc/400?img=53"
+    },
+    {
+      id: 9,
+      name: "Pablo",
+      surname: "Sintesi",
+      role: "Head of Art",
+      location: "Warsaw",
+      avatarUrl: "https://i.pravatar.cc/400?img=33"
     }
   ]
 };

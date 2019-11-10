@@ -1,13 +1,19 @@
-import React from 'react';
-import Carousel from './Carousel/Carousel';
-import Team from './Team/Team';
+import React from "react";
+import Carousel from "./Carousel/Carousel";
+import Team from "./Team/Team";
+import Styled from "styled-components";
+
+const Container = Styled.div`
+    max-width: 800px;
+    margin: 0 auto;
+`;
 
 function App() {
   return (
-    <>
-      <Carousel/>
-      <Team/>
-    </>
+    <Container>
+      <Carousel />
+      <Team />
+    </Container>
   );
 }
 

@@ -9,6 +9,7 @@ const AvatarWrapper = Styled.div`
     border-radius: 50%;
     text-align: center;
     vertical-align: middle;
+    margin: 0 auto;
     ${props =>
       props.size === "sm" &&
       `
@@ -35,7 +36,12 @@ export default function Avatar({ url, alt, size }) {
   );
 }
 
+Avatar.defaultProps = {
+  size: "md"
+};
+
 Avatar.propTypes = {
   url: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired
+  alt: PropTypes.string.isRequired,
+  size: PropTypes.string
 };
