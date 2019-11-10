@@ -9,15 +9,12 @@ const UserWrapper = Styled.div`
     padding: 1rem;
     flex-basis: 20%;
     width: 20%;
-    height: 350px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     p {
         padding: 0.1rem
-    }
-    p:last-of-type {
-        margin-top: auto;
     }
 `;
 
@@ -28,6 +25,7 @@ export default function User({ id, name, surname, role, location, avatar }) {
         url={avatar}
         alt={`${name} ${surname} is a ${role} from ${location}`}
         size='md'
+        icon
       />
       <p>{`${name} ${surname}`}</p>
       <p>{role}</p>

@@ -4,7 +4,7 @@ import Team from "./Team/Team";
 import Styled from "styled-components";
 
 const Container = Styled.div`
-    max-width: 800px;
+    max-width: 950px;
     margin: 0 auto;
 `;
 
