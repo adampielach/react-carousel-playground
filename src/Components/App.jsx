@@ -11,17 +11,18 @@ const Container = styled.div`
 function App() {
   const [id, setId] = useState(0);
   const [isOpened, setOpenModal] = useState(false);
+
   const onClickHandler = id => {
     setId(id);
     setOpenModal(true);
   };
+
   const handleClose = () => {
     setOpenModal(false);
   };
   return (
     <Container>
-      {isOpened && <Carousel startIndex={id} />}
-      <div onClick={handleClose}>CLOSE</div>
+      {isOpened && <Carousel startIndex={id} closeModal={handleClose} />}
       <Team onClickHandler={onClickHandler} />
     </Container>
   );
