@@ -10,25 +10,6 @@ const SiemaWrapper = styled.div`
   position: relative;
 `;
 
-const SiemaClose = styled.div`
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  font-weight: bold;
-  display: block;
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 999;
-  cursor: pointer;
-  font-size: 3rem;
-  &:hover {
-    color: rebeccapurple;
-  }
-`;
-
 const SiemaButton = styled.button`
   border: 0;
   width: 50px;
@@ -51,7 +32,7 @@ const SiemaButton = styled.button`
     props.direction === "next" &&
     `
     left: initial;
-    right: 0;
+    right: 10px;
   `}
 `;
 
@@ -59,7 +40,6 @@ export default function Carousel({ startIndex, closeModal }) {
   let siemaInstance = null;
   return (
     <SiemaWrapper>
-      <SiemaClose onClick={closeModal}>x</SiemaClose>
       <ReactSiema
         {...{ startIndex: startIndex }}
         ref={siema => (siemaInstance = siema)}
@@ -74,10 +54,10 @@ export default function Carousel({ startIndex, closeModal }) {
           </div>
         ))}
       </ReactSiema>
-      <SiemaButton onClick={() => siemaInstance.prev()} direction="prev">
+      <SiemaButton onClick={() => siemaInstance.prev()} direction='prev'>
         &lsaquo;
       </SiemaButton>
-      <SiemaButton onClick={() => siemaInstance.next()} direction="next">
+      <SiemaButton onClick={() => siemaInstance.next()} direction='next'>
         &rsaquo;
       </SiemaButton>
     </SiemaWrapper>

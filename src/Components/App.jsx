@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import Carousel from "./Carousel/Carousel";
 import Team from "./Team/Team";
+import Modal from "./Modal/Modal";
 import styled from "styled-components";
 
 const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 `;
 
 function App() {
@@ -22,7 +24,11 @@ function App() {
   };
   return (
     <Container>
-      {isOpened && <Carousel startIndex={id} closeModal={handleClose} />}
+      {isOpened && (
+        <Modal closeModal={handleClose}>
+          <Carousel startIndex={id} />
+        </Modal>
+      )}
       <Team onClickHandler={onClickHandler} />
     </Container>
   );

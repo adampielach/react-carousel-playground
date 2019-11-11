@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const SlideWrapper = styled.div`
   width: 100%;
-  height: 400px;
+  height: 100vh;
   background: background: rgb(9,96,121);
   background: linear-gradient(0deg, rgba(9,96,121,1) 0%, rgba(9,96,121,0.9192051820728291) 0%, rgba(0,255,231,0.908000700280112) 100%);
   display: flex;
