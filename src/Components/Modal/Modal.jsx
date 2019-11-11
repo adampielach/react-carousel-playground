@@ -11,7 +11,6 @@ const ModalWrapper = styled.div`
   width: 100%;
   max-height: 100%;
   animation: fadeIn 0.5s ease-in-out alternate;
-  /* transition: all 1s opacity; */
   @keyframes fadeIn {
     from {
       opacity: 0;

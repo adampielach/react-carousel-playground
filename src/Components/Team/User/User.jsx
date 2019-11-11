@@ -13,6 +13,12 @@ const UserWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border-radius: 10px;
+  &:hover {
+    background: #fbfbfb;
+  }
   p {
     padding: 0.1rem;
     margin: 0;
