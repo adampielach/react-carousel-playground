@@ -8,8 +8,18 @@ const ModalWrapper = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 998;
-  max-width: 100%;
+  width: 100%;
   max-height: 100%;
+  animation: fadeIn 0.5s ease-in-out alternate;
+  /* transition: all 1s opacity; */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 `;
 
 const CloseButton = styled.div`

@@ -8,6 +8,9 @@ import { settings } from "../../utils/settings";
 
 const SiemaWrapper = styled.div`
   position: relative;
+  background: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80")
+    no-repeat;
+  background-size: cover;
 `;
 
 const SiemaButton = styled.button`
