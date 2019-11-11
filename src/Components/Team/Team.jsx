@@ -20,6 +20,10 @@ const TeamWrapper = styled.div`
 `;
 
 export default function Team() {
+  const onClickHandler = id => {
+    console.log(id);
+  };
+
   return (
     <>
       <TeamHeading>Meet our team</TeamHeading>
@@ -33,6 +37,7 @@ export default function Team() {
             role={member.role}
             location={member.location}
             avatar={member.avatarUrl}
+            onClick={onClickHandler.bind(this, member.id)}
           />
         ))}
       </TeamWrapper>

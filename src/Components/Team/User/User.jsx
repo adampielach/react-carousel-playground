@@ -22,9 +22,16 @@ const UserWrapper = styled.div`
   }
 `;
 
-export default function User({ id, name, surname, role, location, avatar }) {
+export default function User({
+  onClick,
+  name,
+  surname,
+  role,
+  location,
+  avatar
+}) {
   return (
-    <UserWrapper>
+    <UserWrapper onClick={onClick}>
       <Avatar
         url={avatar}
         alt={`${name} ${surname} is a ${role} from ${location}`}
