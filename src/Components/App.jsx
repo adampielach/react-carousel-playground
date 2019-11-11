@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Carousel from "./Carousel/Carousel";
 import Team from "./Team/Team";
 import styled from "styled-components";
@@ -9,10 +9,14 @@ const Container = styled.div`
 `;
 
 function App() {
+  const [id, setId] = useState(0);
+  const onClickHandler = id => {
+    setId(id);
+  };
   return (
     <Container>
-      <Carousel />
-      <Team />
+      <Carousel startIndex={id} />
+      <Team onClickHandler={onClickHandler} />
     </Container>
   );
 }

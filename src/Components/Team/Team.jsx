@@ -19,11 +19,7 @@ const TeamWrapper = styled.div`
   flex-wrap: wrap;
 `;
 
-export default function Team() {
-  const onClickHandler = id => {
-    console.log(id);
-  };
-
+export default function Team({ onClickHandler }) {
   return (
     <>
       <TeamHeading>Meet our team</TeamHeading>
