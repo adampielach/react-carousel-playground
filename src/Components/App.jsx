@@ -1,11 +1,11 @@
 import React from "react";
 import Carousel from "./Carousel/Carousel";
 import Team from "./Team/Team";
-import Styled from "styled-components";
+import styled from "styled-components";
 
-const Container = Styled.div`
-    max-width: 950px;
-    margin: 0 auto;
+const Container = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
 `;
 
 function App() {

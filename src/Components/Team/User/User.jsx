@@ -1,21 +1,25 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Styled from "styled-components";
+import styled from "styled-components";
 
 import Avatar from "./Avatar/Avatar";
 
-const UserWrapper = Styled.div`
-    text-align: center;
-    padding: 1rem;
-    flex-basis: 20%;
-    width: 20%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    p {
-        padding: 0.1rem
+const UserWrapper = styled.div`
+  text-align: center;
+  padding: 1rem;
+  flex-basis: 20%;
+  width: 20%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  p {
+    padding: 0.1rem;
+    margin: 0;
+    &:first-of-type {
+      margin: 1rem;
     }
+  }
 `;
 
 export default function User({ id, name, surname, role, location, avatar }) {
