@@ -7,8 +7,8 @@ import Avatar from "./Avatar/Avatar";
 const UserWrapper = styled.div`
   text-align: center;
   padding: 1rem;
-  flex-basis: 20%;
   width: 20%;
+  flex-basis: 20%;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@ export default function User({
       <Avatar
         url={avatar}
         alt={`${name} ${surname} is a ${role} from ${location}`}
-        size='md'
+        size="md"
         icon
       />
       <p>{`${name} ${surname}`}</p>

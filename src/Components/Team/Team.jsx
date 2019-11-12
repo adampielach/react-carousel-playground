@@ -8,7 +8,8 @@ const TeamHeading = styled.h1`
   font-size: 4rem;
   color: rebeccapurple;
   text-align: center;
-  margin: 4.5rem 2rem;
+  margin: 0 2rem 4.5rem;
+  padding-top: 2rem;
 `;
 
 const TeamWrapper = styled.div`
