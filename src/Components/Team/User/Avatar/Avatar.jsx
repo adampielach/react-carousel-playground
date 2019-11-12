@@ -15,9 +15,9 @@ const AvatarIcon = styled.div`
   text-align: center;
   &:before {
     position: absolute;
-    top: -3px;
+    top: 5px;
     right: -1px;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     color: white;
     content: "✉";
     width: 45px;
