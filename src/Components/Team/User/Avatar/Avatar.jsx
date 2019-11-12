@@ -13,6 +13,17 @@ const AvatarIcon = styled.div`
   z-index: 99;
   vertical-align: middle;
   text-align: center;
+  &:before {
+    position: absolute;
+    top: -3px;
+    right: -1px;
+    font-size: 2.2rem;
+    color: white;
+    content: "✉";
+    width: 45px;
+    height: 45px;
+    display: block;
+  }
 `;
 
 const AvatarWrapper = styled.div`
