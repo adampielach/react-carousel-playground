@@ -15,22 +15,31 @@ const SlideWrapper = styled.div`
   p {
     margin: 0;
     color: white;
+    text-shadow: -1px 3px 2px rgba(0,0,0,0.4);
   }
 `;
 
+const TextWrap = styled.div`
+  padding: 6rem;
+  border: 6px dashed rgba(255, 255, 255, 0.3);
+  text-align: center;
+`;
+
 const Role = styled.p`
-  font-size: 2rem;
+  font-size: 4rem;
 `;
 
 const Person = styled.p`
-  font-size: 4rem;
+  font-size: 6rem;
 `;
 
 export default function Slide({ name, surname, role }) {
   return (
     <SlideWrapper>
-      <Role>{role}</Role>
-      <Person>{`${name} ${surname}`}</Person>
+      <TextWrap>
+        <Role>{role}</Role>
+        <Person>{`${name} ${surname}`}</Person>
+      </TextWrap>
     </SlideWrapper>
   );
 }
