@@ -7,7 +7,7 @@ import Avatar from "./Avatar/Avatar";
 const UserWrapper = styled.div`
   text-align: center;
   padding: 1rem;
-  width: 20%;
+  // width: 20%;
   flex-basis: 20%;
   height: 400px;
   display: flex;
@@ -22,8 +22,16 @@ const UserWrapper = styled.div`
   p {
     padding: 0.1rem;
     margin: 0;
+    font-size: 14px;
     &:first-of-type {
       margin: 1rem;
+      font-size: 16px;
+    }
+    &:nth-of-type(2) {
+      color: #33d9ff;
+    }
+    &:last-of-type {
+      color: #666;
     }
   }
 `;

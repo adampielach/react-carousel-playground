@@ -22,7 +22,7 @@ const SiemaButton = styled.button`
   color: white;
   position: absolute;
   left: 0;
-  top: 45%;
+  top: 48%;
   z-index: 999;
   font-size: 7rem;
   transform: translateY(-50%);
@@ -32,11 +32,20 @@ const SiemaButton = styled.button`
   &:hover {
     color: rebeccapurple;
   }
+  @media (max-width: 768px) {
+    left: -15px;
+    font-size: 3rem;
+    top: 49%;
+  }
   ${props =>
     props.direction === "next" &&
     `
     left: initial;
     right: 10px;
+    @media(max-width: 768px) {
+      left: initial;
+      right: -15px;
+    }
   `}
 `;
 

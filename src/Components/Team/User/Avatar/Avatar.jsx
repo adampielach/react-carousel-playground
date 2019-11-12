@@ -58,8 +58,8 @@ const ImageWrapper = styled.div`
     left: 0;
     bottom: 0;
     right: 0;
-    opacity: 0.5;
-    background: cyan;
+    opacity: 0.6;
+    background: #33d9ff;
     border-radius: 50%;
   }
   img {

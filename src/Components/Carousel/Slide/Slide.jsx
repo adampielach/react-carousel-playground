@@ -23,14 +23,36 @@ const TextWrap = styled.div`
   padding: 6rem;
   border: 6px dashed rgba(255, 255, 255, 0.3);
   text-align: center;
+  @media (max-width: 768px) {
+    border-width: 3px;
+    padding: 3rem;
+  }
 `;
 
 const Role = styled.p`
   font-size: 4rem;
+  @media (max-width: 1340px) {
+    font-size: 4vw;
+  }
+  @media (max-width: 920px) {
+    font-size: 3vw;
+  }
+  @media (max-width: 768px) {
+    font-size: 6vw;
+  }
 `;
 
 const Person = styled.p`
   font-size: 6rem;
+  @media (max-width: 1340px) {
+    font-size: 6vw;
+  }
+  @media (max-width: 920px) {
+    font-size: 5vw;
+  }
+  @media (max-width: 768px) {
+    font-size: 8vw;
+  }
 `;
 
 export default function Slide({ name, surname, role }) {
