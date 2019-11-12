@@ -45,7 +45,7 @@ export default function Slide({ name, surname, role }) {
 }
 
 Slide.propTypes = {
-  Role: PropTypes.string.isRequired,
-  Name: PropTypes.string.isRequired,
-  Surname: PropTypes.string.isRequired
+  role: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  surname: PropTypes.string.isRequired
 };

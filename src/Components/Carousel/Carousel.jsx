@@ -40,7 +40,7 @@ const SiemaButton = styled.button`
   `}
 `;
 
-export default function Carousel({ startIndex, closeModal }) {
+export default function Carousel({ startIndex }) {
   let siemaInstance = null;
   return (
     <SiemaWrapper>
@@ -58,10 +58,10 @@ export default function Carousel({ startIndex, closeModal }) {
           </div>
         ))}
       </ReactSiema>
-      <SiemaButton onClick={() => siemaInstance.prev()} direction='prev'>
+      <SiemaButton onClick={() => siemaInstance.prev()} direction="prev">
         &lsaquo;
       </SiemaButton>
-      <SiemaButton onClick={() => siemaInstance.next()} direction='next'>
+      <SiemaButton onClick={() => siemaInstance.next()} direction="next">
         &rsaquo;
       </SiemaButton>
     </SiemaWrapper>
@@ -73,6 +73,5 @@ Carousel.defaultProps = {
 };
 
 Carousel.propTypes = {
-  startIndex: PropTypes.number,
-  closeModal: PropTypes.func.isRequired
+  startIndex: PropTypes.number
 };
