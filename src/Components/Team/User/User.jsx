@@ -9,7 +9,7 @@ const UserWrapper = styled.div`
   padding: 1rem;
   // width: 20%;
   flex-basis: 20%;
-  height: 400px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

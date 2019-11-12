@@ -8,6 +8,9 @@ const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+  @media (max-width: 768px) {
+    background: rgba(255, 255, 255, 0.7);
+  }
 `;
 
 function App() {
